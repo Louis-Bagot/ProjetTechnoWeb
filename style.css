@@ -1,0 +1,32 @@
+html { font-family: GFS Didot; font-size: 20px; font-style: normal; color: black; margin-left: 120px; margin-right: 120px;}
+header {
+  background: #fff6e4;
+}
+header img {
+  border:0;
+  width:350px;
+  align:"left";
+}
+footer {
+  background: #ff9f9f;
+  left:0;
+  bottom:0;
+  width: 100%;
+  position: fixed;
+}
+footer img {
+  width:150px;
+  vertical-align:middle;
+}
+footer button {
+  vertical-align: middle;
+}
+footer button ML {
+  align:"center";
+}
+footer button NC {
+  align:"right";
+}
+body {
+  background: #fff6e4;
+}
