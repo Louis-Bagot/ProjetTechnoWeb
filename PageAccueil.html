@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Voyage Voyage</title>
+	<!--link rel="stylesheet" href="ex1.css"-->
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.29" />
+</head>
+
+<body>
+	<!-- ZONE HEADER -->
+	<header>
+		<h1>
+			<img border="0" src="images/logoComplet.png" height="75" align="left">
+			<div align="right">
+				<button type="button">Sign In</button>
+				<button type="button">Sign Up</button>
+			</div>
+		</h1>
+	</header>
+
+	<!-- SECTION GAUCHE (FILTRAGE) -->
+	<section>
+		<form action="POST">
+			<!-- Bouton Historique -->
+			<button>Historique</button>
+
+			<!-- Filtrage -->
+		  <fieldset>
+		    <legend><strong> Filtrer </strong></legend>
+				Destination : </br>
+						<select name="Destination" multiple >
+							<option value="Espagne"> Espagne </option>
+							<option value="Argentine"> Argentine </option>
+							<option value="Canada"> Canada </option>
+							<option value="..."> ...
+						</select><br/>
+				Logement : </br>
+						<select name="Logement" >
+							<option value="Hôtel"> Hôtel </option>
+							<option value="Camping"> Camping </option>
+							<option value="Appartement"> Appartement </option>
+							<option value="Igloo"> Igloo
+						</select><br/>
+				Pension : </br>
+						<select name="Pension" >
+							<option value="Pension Complète"> Pension Complète </option>
+							<option value="Demi-Pension"> Demi-Pension </option>
+							<option value="Petit Déjeuner"> Petit Déjeuner </option>
+							<option value="(Aucun)"> Aucun
+						</select><br/>
+				Durée : </br>
+					<input type="text" name="Durée" id="Durée" placeholder="Nombre de jours..." /><br/> </td>
+					(Au moins 2 jours) <br>
+				<!-- (Validation ou effaçage) -->
+				<input type="submit" name="action" value="Valider"/>
+				<input type="reset" value="Effacer"/>
+			</fieldset>
+
+			<!-- Bouton FAQ -->
+			<button>FAQ</button>
+		</form>
+	</section>
+
+	<section>
+		<!-- ZONE VOYAGES -->
+	</section>
+
+	<!-- ZONE FOOTER -->
+	<footer>
+		<img border="0" src="images/logoSimple.png" height="75">
+	</footer>
+</body>
+</html>
