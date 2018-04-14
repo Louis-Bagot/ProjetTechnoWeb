@@ -14,57 +14,58 @@
 	<!-- ZONE HEADER -->
 	<header>
 		<h1>
-			<div align="right">
-				<button>Sign In</button>
-				<button>Sign Up</button>
-			</div>
+			<table>
+				<td><a href="SignIn.html"</a><button>Sign In</button></a>
+				<a href="SignUp.html"</a><button>Sign Up</button></a></td>
+			</table>
 			<a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
 		</h1>
 	</header>
-	<br>
+
 
 	<!-- SECTION GAUCHE (FILTRAGE) -->
 	<section>
 		<!-- Bouton Historique -->
-		<button>Historique</button>
+		<a href="Historique.html"</a><button>Historique</button></a>
+		<br>
+		<br>
 
 		<!-- Filtrage -->
 	  <fieldset>
 			<form action="POST">
 		    <legend><strong> Filtrer </strong></legend>
-				Destination : </br>
-						<select name="Destination" multiple >
+				<br>
+				Destination :	<br> <select name="Destination" multiple >
 							<option value="Espagne"> Espagne </option>
 							<option value="Argentine"> Argentine </option>
 							<option value="Canada"> Canada </option>
 							<option value="..."> ...
 						</select><br/>
-				Logement : </br>
-						<select name="Logement" >
+				Logement : <select name="Logement" >
 							<option value="Hôtel"> Hôtel </option>
 							<option value="Camping"> Camping </option>
 							<option value="Appartement"> Appartement </option>
 							<option value="Igloo"> Igloo
 						</select><br/>
-				Pension : </br>
-						<select name="Pension" >
+				Pension :	<select name="Pension" >
 							<option value="Pension Complète"> Pension Complète </option>
 							<option value="Demi-Pension"> Demi-Pension </option>
 							<option value="Petit Déjeuner"> Petit Déjeuner </option>
 							<option value="(Aucun)"> Aucun
 						</select><br/>
-				Durée : </br>
-					<input type="text" name="Durée" id="Durée" placeholder="Nombre de jours..." /><br/> </td>
-					(Au moins 2 jours) <br>
+				Durée : <input type="text" name="Durée" id="Durée" placeholder="Nombre de nuits... (au moins 1)" /><br/> </td>
 				<!-- (Validation ou effaçage) -->
+				<br>
 				<input type="submit" name="action" value="Valider"/>
 				<input type="reset" value="Effacer"/>
 			</form>
 		</fieldset>
+		<br>
 
 		<!-- Bouton FAQ -->
-		<button>FAQ</button>
+		<a href="FAQ.html"</a><button>FAQ</button></a>
 	</section>
+
 
 	<section>
 		<!-- ZONE VOYAGES -->
@@ -73,10 +74,11 @@
 	<br>
 	<!-- ZONE FOOTER -->
 	<footer>
-		<img src="images/logoSimple.png">
-		<button>Mentions Légales</button>
-		<button>Nous Contacter</button>
-
+		<table>
+			<td><img src="images/logoSimple.png"></td>
+			<td><a href="MentionsLegales.html"</a><button>Mentions Légales</button></a></td>
+			<td><a href="NousContacter.html"</a><button>Nous Contacter</button></a></td>
+		</table>
 	</footer>
 </body>
 </html>
