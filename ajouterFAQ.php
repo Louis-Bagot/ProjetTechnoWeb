@@ -4,7 +4,9 @@
       fputs($fichier,$_POST ["monPseudo"]." a écrit le ".date("l j F Y, G.i.s")." :<br/>".$_POST ["texte"]."<br/><br/>");
 		}
 		else {
-      echo "Tous les champs doivent être renseignés pour poster un message !";
+			$message="Tous les champs doivent être renseignés pour poster un message !";
+			echo '<script type="text/javascript"> alert("'.$message.'")</script>';
+      include("FAQ.php");
 		}
 		fclose($fichier);
 		include("FAQ.php");
