@@ -22,17 +22,26 @@
 		</h1>
 	</header>
 	<br>
-	<h1>FAQ</h1>
-
-
+	<h1>Nous contacter</h1>
+	<br>
+	Nos commerciaux sont à votre disposition du mardi au samedi, de 9h à 18h. Vous pouvez également les joindre par mail.
+	<br>
+	<br>
+	<?php
+	include("afficher_commerciaux.php");
+	?>
+	</form>
+	<br>
+	A bientôt dans notre agence !
+	<br>
+	<br>
 	<!-- ZONE FOOTER -->
 	<footer>
 		<table>
 			<td><img src="images/logoSimple.png"></td>
 			<td><a href="MentionsLegales.html"</a><button>Mentions Légales</button></a></td>
-			<td><a href="NousContacter.html"</a><button>Nous Contacter</button></a></td>
+			<td><a href="NousContacter.php"</a><button>Nous Contacter</button></a></td>
 		</table>
-
 	</footer>
 </body>
 

@@ -22,22 +22,32 @@
 		</h1>
 	</header>
 	<br>
-	<h1>Nous contacter</h1>
-	<br>
-	Nos commerciaux sont à votre disposition du mardi au samedi, de 9h à 18h. Vous pouvez également les joindre par mail.
-	<br>
-	<br>
-	<table>
-		<ul>
-				<li>Margot Sirdey : margot.sirdey@voyages.com</li>
-				<li>Michel Dupont : michel.dupont@voyages.com</li>
-				<li>Clara Moriceau : clara.moriceau@voyages.com</li>
-		</ul>
-	</table>
-	<br>
-	A bientôt dans notre agence !
-	<br>
-	<br>
+	<h1>FAQ</h1>
+
+	<form action ="ajouterFAQ.php" method ="POST">
+
+	<form action="POST">
+	  <fieldset>
+	    <legend>Ajouter un nouveau message</legend>
+			<table>
+				<tr>
+					<td><label>Pseudo :</label></td>
+					<td><input type="text" name="monPseudo" id="nom" placeholder="Saisissez votre pseudo"/></td>
+				</tr>
+			</table>
+	    <legend>Message:</legend>
+	    <textarea name="texte" rows="10" cols="80" placeholder="Exprimez-vous !"></textarea>
+	  <p><input type="submit" name="action" value="Poster le message" />
+	  <input type="reset" value="Effacer"/>
+	</p>
+	</fieldset>
+	</form>
+
+	<?php
+	include("afficherFAQ.php");
+	?>
+
+
 	<!-- ZONE FOOTER -->
 	<footer>
 		<table>
@@ -45,6 +55,7 @@
 			<td><a href="MentionsLegales.html"</a><button>Mentions Légales</button></a></td>
 			<td><a href="NousContacter.html"</a><button>Nous Contacter</button></a></td>
 		</table>
+
 	</footer>
 </body>
 
