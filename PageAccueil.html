@@ -22,54 +22,56 @@
 		</h1>
 	</header>
 
+	<div id="frames">
+		<!-- SECTION GAUCHE (FILTRAGE) -->
+		<section id="Filtrage">
+			<!-- Bouton Historique -->
+			<a href="Historique.html"</a><button>Historique</button></a>
 
-	<!-- SECTION GAUCHE (FILTRAGE) -->
-	<section>
-		<!-- Bouton Historique -->
-		<a href="Historique.html"</a><button>Historique</button></a>
-		<br>
-		<br>
+			<!-- Filtrage -->
+		  <fieldset>
+				<form action="POST">
+			    <legend><strong> Filtrer</strong></legend>
+					<br>
+					Destination :	<br> <select name="Destination" multiple >
+								<option value="Espagne"> Espagne </option>
+								<option value="Argentine"> Argentine </option>
+								<option value="Canada"> Canada </option>
+								<option value="..."> ...
+							</select><br/>
+					Logement : <select name="Logement" >
+								<option value="Hôtel"> Hôtel </option>
+								<option value="Camping"> Camping </option>
+								<option value="Appartement"> Appartement </option>
+								<option value="Igloo"> Igloo
+							</select><br/>
+					Pension :	<select name="Pension" >
+								<option value="Pension Complète"> Pension Complète </option>
+								<option value="Demi-Pension"> Demi-Pension </option>
+								<option value="Petit Déjeuner"> Petit Déjeuner </option>
+								<option value="(Aucun)"> Aucun
+							</select><br/>
+					Durée : <input type="text" name="Durée" id="Durée" placeholder="Nombre de nuits... (au moins 1)" /><br/> </td>
+					<!-- (Validation ou effaçage) -->
+					<br>
+					<input type="submit" name="action" value="Valider"/>
+					<input type="reset" value="Effacer"/>
+				</form>
+			</fieldset>
 
-		<!-- Filtrage -->
-	  <fieldset>
-			<form action="POST">
-		    <legend><strong> Filtrer </strong></legend>
-				<br>
-				Destination :	<br> <select name="Destination" multiple >
-							<option value="Espagne"> Espagne </option>
-							<option value="Argentine"> Argentine </option>
-							<option value="Canada"> Canada </option>
-							<option value="..."> ...
-						</select><br/>
-				Logement : <select name="Logement" >
-							<option value="Hôtel"> Hôtel </option>
-							<option value="Camping"> Camping </option>
-							<option value="Appartement"> Appartement </option>
-							<option value="Igloo"> Igloo
-						</select><br/>
-				Pension :	<select name="Pension" >
-							<option value="Pension Complète"> Pension Complète </option>
-							<option value="Demi-Pension"> Demi-Pension </option>
-							<option value="Petit Déjeuner"> Petit Déjeuner </option>
-							<option value="(Aucun)"> Aucun
-						</select><br/>
-				Durée : <input type="text" name="Durée" id="Durée" placeholder="Nombre de nuits... (au moins 1)" /><br/> </td>
-				<!-- (Validation ou effaçage) -->
-				<br>
-				<input type="submit" name="action" value="Valider"/>
-				<input type="reset" value="Effacer"/>
-			</form>
-		</fieldset>
-		<br>
-
-		<!-- Bouton FAQ -->
-		<a href="FAQ.html"</a><button>FAQ</button></a>
-	</section>
+			<!-- Bouton FAQ -->
+			<a href="FAQ.php"</a><button>FAQ</button></a>
+		</section>
 
 
-	<section>
-		<!-- ZONE VOYAGES -->
-	</section>
+		<section id="Voyages">
+			<!-- SECTION VOYAGES -->
+			<img src="images/Canada.png">
+			<img src="images/Finlande.png">
+			<img src="images/CapVert.png">
+			<img src="images/Italie.png">
+		</section>
+	</div>
 
 	<br>
 	<!-- ZONE FOOTER -->
@@ -77,7 +79,7 @@
 		<table>
 			<td><img src="images/logoSimple.png"></td>
 			<td><a href="MentionsLegales.html"</a><button>Mentions Légales</button></a></td>
-			<td><a href="NousContacter.html"</a><button>Nous Contacter</button></a></td>
+			<td><a href="NousContacter.php"</a><button>Nous Contacter</button></a></td>
 		</table>
 	</footer>
 </body>
