@@ -13,14 +13,14 @@
 <body>
 	<!-- ZONE HEADER -->
 	<header>
-		<h1>
-			<table>
-				<td><a href="SignIn.html"</a><button>Sign In</button></a>
-				<a href="SignUp.html"</a><button>Sign Up</button></a></td>
-			</table>
-			<a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
-		</h1>
+		<a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
+		<div id="SignInUp">
+			<a href="SignIn.html"</a><button>Sign In</button></a>
+			<a href="SignUp.html"</a><button>Sign Up</button></a>
+		</div>
 	</header>
+	<hr id="headerHR">
+	<br>
 
 	<div id="frames">
 		<!-- SECTION GAUCHE (FILTRAGE) -->
@@ -54,8 +54,10 @@
 					Durée : <input type="text" name="Durée" id="Durée" placeholder="Nombre de nuits... (au moins 1)" /><br/> </td>
 					<!-- (Validation ou effaçage) -->
 					<br>
-					<input type="submit" name="action" value="Valider"/>
-					<input type="reset" value="Effacer"/>
+					<div >
+						<input type="submit" name="action" value="Valider"/>
+						<input type="reset" value="Effacer"/>
+					</div>
 				</form>
 			</fieldset>
 
@@ -70,9 +72,15 @@
 			<img src="images/Finlande.png">
 			<img src="images/CapVert.png">
 			<img src="images/Italie.png">
+			<img src="images/Canada.png">
+			<img src="images/Finlande.png">
+			<img src="images/CapVert.png">
+			<img src="images/Italie.png">
 		</section>
 	</div>
 
+	<br><br>
+	<hr id="footerHR">
 	<br>
 	<!-- ZONE FOOTER -->
 	<footer>

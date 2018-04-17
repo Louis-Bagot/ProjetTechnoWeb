@@ -2,32 +2,71 @@ html {
   font-family: GFS Didot;
   font-size: 20px;
   font-style: normal;
-  margin-left: 120px;
-  margin-right: 120px;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 10%;
+  background: #fff6e4;
 }
 
 /* HEADER */
 header {
-  width: auto;
+  width: 100%;
   background: #fff6e4;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
 }
 
 header img {
-  width:30%;
-}
-header table {
-  vertical-align: middle;
-  width: 100%;
-  text-align: right;
+  margin-top: 1%;
+  margin-left: 0%;
+  width:35%;
 }
 
-/* BODY */
-body {
-  margin-bottom: 150px;
-  background: #fff6e4;
+#SignInUp {
+  margin-right: 1%;
 }
+#SignInUp button {
+  background: #ff9f9f;
+  border-color: #a54949;
+  color: #581b1b;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  font-family: GFS Didot;
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -5%;
+}
+
+#headerHR {
+  overflow: visible;
+  /* For IE */ height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+#footerHR {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+/* FRAMES */
 
 #frames {
+  margin-left: 120px;
+  margin-right: 120px;
   display: flex;
 }
 
@@ -36,6 +75,7 @@ body {
   width: 40%;
   background: #ff9f9f;
   text-align: center;
+  height: 100%;
 }
 
 #Filtrage fieldset {
@@ -44,6 +84,11 @@ body {
   background: #ff8686;
   border: none;
 }
+
+fieldset div {
+  text-align: center;
+}
+
 form legend {
   font-size: 40px;
   text-align: center;
@@ -59,14 +104,14 @@ form legend {
   border-radius: 2px;
   border-style: solid;
   font-family: GFS Didot;
-  font-size: 15px;
+  font-size: 125%;
   font-weight: bold;
 }
 
 #Voyages {
   margin-left: 5%;
-  height: 100%;
-  overflow: auto;
+  height: 515px;
+  overflow: scroll;
 }
 
 #Voyages img {
