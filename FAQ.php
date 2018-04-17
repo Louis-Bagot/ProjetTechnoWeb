@@ -35,14 +35,15 @@
 					<td><input type="text" name="monPseudo" id="nom" placeholder="Saisissez votre pseudo"/></td>
 				</tr>
 			</table>
-	    <legend>Message:</legend>
+	    <legend>Message :</legend>
 	    <textarea name="texte" rows="10" cols="80" placeholder="Exprimez-vous !"></textarea>
 	  <p><input type="submit" name="action" value="Poster le message" />
 	  <input type="reset" value="Effacer"/>
 	</p>
 	</fieldset>
 	</form>
-
+	<br>
+	<br>
 	<?php
 	include("afficherFAQ.php");
 	?>
