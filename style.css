@@ -5,27 +5,84 @@ html {
   margin-left: 120px;
   margin-right: 120px;
 }
+
+/* HEADER */
+header {
+  width: auto;
+  background: #fff6e4;
+}
+
 header img {
-  width:350px;
+  width:30%;
 }
 header table {
   vertical-align: middle;
   width: 100%;
   text-align: right;
 }
+
+/* BODY */
 body {
-  background: #fff6e4;
   margin-bottom: 150px;
+  background: #fff6e4;
 }
-fieldset {
-  width: 25%;
+
+#frames {
+  display: flex;
 }
+
+#Filtrage {
+  position: relative;
+  width: 40%;
+  background: #ff9f9f;
+  text-align: center;
+}
+
+#Filtrage fieldset {
+  text-align: left;
+  color: #581b1b;
+  background: #ff8686;
+  border: none;
+}
+form legend {
+  font-size: 40px;
+  text-align: center;
+}
+
+#Filtrage button {
+  background: #ff9f9f;
+  border-color: #a54949;
+  color: #581b1b;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  font-family: GFS Didot;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#Voyages {
+  margin-left: 5%;
+  height: 100%;
+  overflow: auto;
+}
+
+#Voyages img {
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+/* FOOTER */
+
 footer {
   background: #ff9f9f;
   left:0;
   bottom:0;
   width: 100%;
   position:fixed;
+  display: flex
 }
 footer img {
   width:150px;
