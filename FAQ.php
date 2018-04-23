@@ -60,12 +60,9 @@
 
 	<!-- ZONE FOOTER -->
 	<footer>
-		<table>
-			<td><img src="images/logoSimple.png"></td>
-			<td><a href="MentionsLegales.php"</a><button>Mentions Légales</button></a></td>
-			<td><a href="NousContacter.php"</a><button>Nous Contacter</button></a></td>
-		</table>
-
+		<img src="images/logoSimple.png"></td>
+		<a href="MentionsLegales.php"</a><button>Mentions Légales</button></a>
+		<a href="NousContacter.php"</a><button>Nous Contacter</button></a>
 	</footer>
 </body>
 
