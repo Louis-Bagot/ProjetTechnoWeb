@@ -13,20 +13,18 @@
 <body>
 	<!-- ZONE HEADER -->
 	<header>
-		<h1>
-			<table>
-				<td><a href="SignIn.html"</a><button>Sign In</button></a>
-				<a href="SignUp.html"</a><button>Sign Up</button></a></td>
-			</table>
-			<a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
-		</h1>
+	  <a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
+	  <div id="SignInUp">
+	    <a href="SignIn.html"</a><button>Sign In</button></a>
+	    <a href="SignUp.html"</a><button>Sign Up</button></a>
+	  </div>
 	</header>
 	<br>
 	<h1>FAQ</h1>
 
-	<div id="frames">
+	<div id="framesFAQ">
 
-		<section>
+		<section id="ajoutMessage">
 			<form action ="ajouterFAQ.php" method ="POST">
 			<form action="POST">
 			  <fieldset>
@@ -45,7 +43,8 @@
 			</fieldset>
 			</form>
 		</section>
-		<section>
+
+		<section id="messagesPostes">
 			<fieldset>
 				<legend>Messages postés</legend>
 				<table>
