@@ -142,11 +142,11 @@ form legend {
 
 #messagesPostes {
   margin-left: 0;
-  width: 50%
+  width: 50%;
   overflow: scroll;
 }
 #messagesPostes fieldset {
-  width: 150%;
+  width: 90%;
 }
 
 

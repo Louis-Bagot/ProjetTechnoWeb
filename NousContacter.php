@@ -13,13 +13,7 @@
 <body>
 	<!-- ZONE HEADER -->
 	<header>
-		<h1>
-			<table>
-				<td><a href="SignIn.html"</a><button>Sign In</button></a>
-				<a href="SignUp.html"</a><button>Sign Up</button></a></td>
-			</table>
-			<a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
-		</h1>
+		<?php	include("header.php"); ?>
 	</header>
 	<br>
 	<h1>Nous contacter</h1>
