@@ -22,13 +22,16 @@
 		</h1>
 	</header>
 	<br>
-	<h1>Mentions légales</h1>
-
+	<h1>Mentions légales et conditions d'utilisation</h1>
+	<br>
+	<?php
+	include("afficherML.php");
+	?>
 	<!-- ZONE FOOTER -->
 	<footer>
 		<table>
 			<td><img src="images/logoSimple.png"></td>
-			<td><a href="MentionsLegales.html"</a><button>Mentions Légales</button></a></td>
+			<td><a href="MentionsLegales.php"</a><button>Mentions Légales</button></a></td>
 			<td><a href="NousContacter.php"</a><button>Nous Contacter</button></a></td>
 		</table>
 	</footer>
