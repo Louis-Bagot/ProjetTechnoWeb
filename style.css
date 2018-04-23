@@ -126,15 +126,20 @@ form legend {
   margin-bottom: 3%;
 }
 
+#unVoyage div {
+  margin-left: 3px;
+}
+
 #unVoyage table {
   font-size: 85%;
-  table-layout: auto;
   border-spacing: 5px;
 }
+
 
 #NomVoyage {
   font-size: 120%;
   font-weight: bold;
+  color: #581b1b;
 }
 
 /* Frames FAQ */
