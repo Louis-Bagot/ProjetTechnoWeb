@@ -36,7 +36,8 @@
 	<br>
 	<section id="Voyages">
 		<div id="unVoyage">
-			<img src="images/Canada.png">
+			<?php $image = "images/Voyage oriental.jpg" ?>
+			<img src="<?php echo $image ?>">
 			<div >
 				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 				<table>
@@ -52,7 +53,8 @@
 		</div>
 
 		<div id="unVoyage">
-			<img src="images/Italie.png">
+			<?php $image = "images/Italie.png" ?>
+			<img src="<?php echo $image ?>">
 			<div >
 				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 				<table>
@@ -68,7 +70,8 @@
 		</div>
 
 		<div id="unVoyage">
-			<img src="images/Canada.png">
+			<?php $image = "images/Madagascar.jpg" ?>
+			<img src="<?php echo $image ?>">
 			<div >
 				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 				<table>

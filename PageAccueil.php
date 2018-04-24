@@ -70,7 +70,8 @@
 
 		<section id="Voyages">
 			<div id="unVoyage">
-				<img src="images/Canada.png">
+				<?php $image = "images/Argentine caliente.jpg" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -83,7 +84,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<img src="images/Finlande.png">
+				<?php $image = "images/Voyage oriental.jpg" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -96,7 +98,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<img src="images/CapVert.png">
+				<?php $image = "images/CapVert.png" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -109,7 +112,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<img src="images/Italie.png">
+				<?php $image = "images/Bienvenue au pays des kangourous.jpg" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -122,7 +126,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<img src="images/Canada.png">
+				<?php $image = "images/Grand froid.jpg" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -135,7 +140,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<img src="images/Finlande.png">
+				<?php $image = "images/Ile de beauté.jpg" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -148,7 +154,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<img src="images/CapVert.png">
+				<?php $image = "images/Au coeur des traditions.jpg" ?>
+				<img src="<?php echo $image ?>">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
