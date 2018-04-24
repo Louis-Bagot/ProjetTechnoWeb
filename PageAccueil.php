@@ -1,3 +1,4 @@
+<?php require("login.in.php") ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -12,21 +13,21 @@
 
 <body>
 	<header>
-	  <a href="PageAccueil.html"><img src="images/logoComplet.png"></a>
+	  <a href="PageAccueil.php"><img src="images/logoComplet.png"></a>
 	  <div id="SignInUp">
-	    <a href="SignIn.html"</a><button>Sign In</button></a>
-	    <a href="SignUp.html"</a><button>Sign Up</button></a>
-			<br>coucou@voyages.fr
+	    <a href="SignIN.php"</a><button>Sign In</button></a>
+	    <a href="SignUP.php"</a><button>Sign Up</button></a>
+			<a href="logout.php"</a><button>Log Out</button></a>
+			<br> <?php $login = $_SESSION["login"]; echo "$login"; ?>
 		</div>
 	</header>
 	<hr id="headerHR">
 	<br>
-
 	<div id="frames">
 		<!-- SECTION GAUCHE (FILTRAGE) -->
 		<section id="Filtrage">
 			<!-- Bouton Historique -->
-			<a href="Historique.html"</a><button>Historique</button></a>
+			<a href="Historique.php"</a><button>Historique</button></a>
 
 			<!-- Filtrage -->
 		  <fieldset>
