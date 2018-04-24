@@ -10,7 +10,7 @@
       try
       {
 	/* creation de la BD */
-	$db = new PDO("sqlite:./data/personnes.sqlite");
+	$db = new PDO("sqlite:./VoyageVoyage.sqlite");
 	/* errors -> exceptions */
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	/* debut de transaction */

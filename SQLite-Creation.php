@@ -40,13 +40,14 @@
 	prenomc TEXT NOT NULL,
   nomco TEXT NOT NULL ,
 	prenomco TEXT NOT NULL
-
 	)";
 
 	/* creation de la BD */
-	$db = new PDO("sqlite:./data/VoyageVoyage.sqlite");
+  $db = new PDO('sqlite:./data/VoyageVoyage.sqlite');
+
 	/* errors -> exceptions */
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 	/* requete de creation */
 	$db->query($requeteVoyage);
 	$db->query($requeteClient);
@@ -58,6 +59,7 @@
       }
       catch(PDOException $e)
       {
+  echo "pas acces";
 	echo $e->getMessage();
       }
     ?>
