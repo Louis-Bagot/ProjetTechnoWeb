@@ -70,8 +70,8 @@
 
 		<section id="Voyages">
 			<div id="unVoyage">
-				<?php $image = "images/Argentine caliente.jpg" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "Argentine caliente" ?>
+				<img src="images/<?php echo $image ?>.jpg">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -84,8 +84,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<?php $image = "images/Voyage oriental.jpg" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "Voyage oriental" ?>
+				<img src="images/<?php echo $image ?>.jpg">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -98,8 +98,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<?php $image = "images/CapVert.png" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "CapVert" ?>
+				<img src="images/<?php echo $image ?>.png">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -112,8 +112,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<?php $image = "images/Bienvenue au pays des kangourous.jpg" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "Bienvenue au pays des kangourous" ?>
+				<img src="images/<?php echo $image ?>.jpg">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -126,8 +126,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<?php $image = "images/Grand froid.jpg" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "Grand froid" ?>
+				<img src="images/<?php echo $image ?>.jpg">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -140,8 +140,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<?php $image = "images/Ile de beauté.jpg" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "Ile de beauté" ?>
+				<img src="images/<?php echo $image ?>.jpg">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
@@ -154,8 +154,8 @@
 			</div>
 
 			<div id="unVoyage">
-				<?php $image = "images/Au coeur des traditions.jpg" ?>
-				<img src="<?php echo $image ?>">
+				<?php $image = "Au coeur des traditions" ?>
+				<img src="images/<?php echo $image ?>.jpg">
 				<div >
 					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
