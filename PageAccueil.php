@@ -18,7 +18,7 @@
 	    <a href="SignIN.php"</a><button>Sign In</button></a>
 	    <a href="SignUP.php"</a><button>Sign Up</button></a>
 			<a href="logout.php"</a><button>Log Out</button></a>
-			<br> <?php $login = $_SESSION["login"]; echo "$login"; ?>
+			<br><div id="NomVoyageClient"> <?php $login = $_SESSION["login"]; echo "$login"; ?></div>
 		</div>
 	</header>
 	<hr id="headerHR">
@@ -72,7 +72,7 @@
 			<div id="unVoyage">
 				<img src="images/Canada.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -85,7 +85,7 @@
 			<div id="unVoyage">
 				<img src="images/Finlande.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -98,7 +98,7 @@
 			<div id="unVoyage">
 				<img src="images/CapVert.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -111,7 +111,7 @@
 			<div id="unVoyage">
 				<img src="images/Italie.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -124,7 +124,7 @@
 			<div id="unVoyage">
 				<img src="images/Canada.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -137,7 +137,7 @@
 			<div id="unVoyage">
 				<img src="images/Finlande.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -150,7 +150,7 @@
 			<div id="unVoyage">
 				<img src="images/CapVert.png">
 				<div >
-					<div id="NomVoyage"> (Champ nom du Voyage)</div>
+					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 					<table>
 						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
@@ -167,7 +167,7 @@
 	<br>
 	<!-- ZONE FOOTER -->
 	<footer>
-		<img src="images/logoSimple.png"></td>
+		<a href="PageAccueil.php"><img src="images/logoSimple.png"></a>
 		<a href="MentionsLegales.php"</a><button>Mentions Légales</button></a>
 		<a href="NousContacter.php"</a><button>Nous Contacter</button></a>
 	</footer>
