@@ -35,9 +35,10 @@ if ( isset($_POST["submit"]) ) {
 
 }
   elseif(!isset($_SESSION["login"])) {
-    $message3 = 'Vous êtes anonyme \nCliquer sur \'Ok\' pour vous authentifier';
-    header("Location: ./SignIN.php?Message=". urlencode($message3));
+    //$message3 = 'Vous êtes anonyme \nCliquer sur \'Ok\' pour vous authentifier';
+    //header("Location: ./SignIN.php?Message=". urlencode($message3));
     //echo "Anonyme";
+    //$login = "Anonyme";
   }
 
 

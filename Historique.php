@@ -19,25 +19,32 @@
 		    <a href="SignIN.php"</a><button>Sign In</button></a>
 		    <a href="SignUP.php"</a><button>Sign Up</button></a>
 				<a href="logout.php"</a><button>Log Out</button></a>
-				<br> <?php $login = $_SESSION["login"]; echo "$login"; ?>
+				<br><div id="NomVoyageClient"> <?php $login = $_SESSION["login"]; echo "$login"; ?></div>
 		  </div>
 
 	</header>
 	<br>
+
+	<?php
+			if(!isset($_SESSION["login"])) {
+				$message = 'Vous n\'êtes pas authentifié \nCliquer sur \'Ok\' pour vous connecter';
+				header("Location: ./SignIN.php?Message=". urlencode($message));
+			}
+	 ?>
+
 	<h1>Votre Historique</h1>
 	<br>
 	<section id="Voyages">
 		<div id="unVoyage">
-			<img src="images/Finlande.png">
+			<img src="images/Canada.png">
 			<div >
-				<div id="NomVoyage"> (Champ nom du Voyage)</div>
+				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 				<table>
 					<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 					<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
 					<tr><td>Numéro de facture :</td> <td> (champ num facture)</td></tr>
 					<tr><td>Prix payé :</td> <td> (champ prix)</td></tr>
 					<tr><td>Dates :</td> <td> (champ dated -> datef)</td></tr>
-					<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
 					<tr><td>Transport :</td> <td> (champ transport)</td></tr>
 					<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
 				</table>
@@ -47,14 +54,13 @@
 		<div id="unVoyage">
 			<img src="images/Italie.png">
 			<div >
-				<div id="NomVoyage"> (Champ nom du Voyage)</div>
+				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 				<table>
 					<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 					<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
 					<tr><td>Numéro de facture :</td> <td> (champ num facture)</td></tr>
 					<tr><td>Prix payé :</td> <td> (champ prix)</td></tr>
 					<tr><td>Dates :</td> <td> (champ dated -> datef)</td></tr>
-					<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
 					<tr><td>Transport :</td> <td> (champ transport)</td></tr>
 					<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
 				</table>
@@ -64,14 +70,13 @@
 		<div id="unVoyage">
 			<img src="images/Canada.png">
 			<div >
-				<div id="NomVoyage"> (Champ nom du Voyage)</div>
+				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
 				<table>
 					<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
 					<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
 					<tr><td>Numéro de facture :</td> <td> (champ num facture)</td></tr>
 					<tr><td>Prix payé :</td> <td> (champ prix)</td></tr>
 					<tr><td>Dates :</td> <td> (champ dated -> datef)</td></tr>
-					<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
 					<tr><td>Transport :</td> <td> (champ transport)</td></tr>
 					<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
 				</table>
@@ -82,7 +87,7 @@
 
 	<!-- ZONE FOOTER -->
 	<footer>
-		<img src="images/logoSimple.png"></td>
+		<a href="PageAccueil.php"><img src="images/logoSimple.png"></a>
 		<a href="MentionsLegales.php"</a><button>Mentions Légales</button></a>
 		<a href="NousContacter.php"</a><button>Nous Contacter</button></a>
 	</footer>
