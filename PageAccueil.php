@@ -68,104 +68,32 @@
 
 		<!-- SECTION VOYAGES -->
 
+		<?php
+				//require_once("SQLite-Creation.php");
+				//require_once("SQLite-Insertion.php");
+				require("SQLite-Selection-PA.php");
+		?>
+
 		<section id="Voyages">
-			<div id="unVoyage">
-				<?php $image = "Argentine caliente" ?>
-				<img src="images/<?php echo $image ?>.jpg">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
-				</div>
-			</div>
 
-			<div id="unVoyage">
-				<?php $image = "Voyage oriental" ?>
-				<img src="images/<?php echo $image ?>.jpg">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
-				</div>
-			</div>
+<?php foreach($resultPA as $row) : ?>
 
-			<div id="unVoyage">
-				<?php $image = "CapVert" ?>
-				<img src="images/<?php echo $image ?>.png">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
+				<div id="unVoyage">
+					<?php $image = $row['nomv'] ?>
+					<img src="images/<?php echo $image ?>.jpg">
+					<div >
+						<div id="NomVoyageClient"> <?php echo $row['nomv'] ?> </div>
+						<table>
+							<tr><td>Logement :</td> <td> <?php echo $row['logement'] ?> </td></tr>
+							<tr><td>Pension :</td> <td> <?php echo $row['pension'] ?> </td></tr>
+							<tr><td>Durée :</td> <td> <?php echo $row['duree']." nuit(s)" ?> </td></tr>
+							<tr><td>Tour Opérateur :</td> <td> <a href=<?php echo "https://".$row['urlto'] ?>> <?php echo $row['urlto'] ?> </a></td></tr>
+						</table>
+					</div>
 				</div>
-			</div>
 
-			<div id="unVoyage">
-				<?php $image = "Bienvenue au pays des kangourous" ?>
-				<img src="images/<?php echo $image ?>.jpg">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
-				</div>
-			</div>
+<?php endforeach ?>
 
-			<div id="unVoyage">
-				<?php $image = "Grand froid" ?>
-				<img src="images/<?php echo $image ?>.jpg">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
-				</div>
-			</div>
-
-			<div id="unVoyage">
-				<?php $image = "Ile de beauté" ?>
-				<img src="images/<?php echo $image ?>.jpg">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
-				</div>
-			</div>
-
-			<div id="unVoyage">
-				<?php $image = "Au coeur des traditions" ?>
-				<img src="images/<?php echo $image ?>.jpg">
-				<div >
-					<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-					<table>
-						<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-						<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-						<tr><td>Durée :</td> <td> (champ Durée)</td></tr>
-						<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-					</table>
-				</div>
-			</div>
 		</section>
 	</div>
 

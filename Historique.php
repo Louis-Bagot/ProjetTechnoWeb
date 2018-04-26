@@ -34,23 +34,10 @@
 
 	<h1>Votre Historique</h1>
 	<br>
+
+	<?php require("SQLite-Selection-H.php"); ?>
+
 	<section id="Voyages">
-		<div id="unVoyage">
-			<?php $image = "Voyage oriental"?>
-			<img src="images/<?php echo $image ?>.jpg">
-			<div >
-				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-				<table>
-					<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-					<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-					<tr><td>Numéro de facture :</td> <td> (champ num facture)</td></tr>
-					<tr><td>Prix payé :</td> <td> (champ prix)</td></tr>
-					<tr><td>Dates :</td> <td> (champ dated -> datef)</td></tr>
-					<tr><td>Transport :</td> <td> (champ transport)</td></tr>
-					<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-				</table>
-			</div>
-		</div>
 
 		<div id="unVoyage">
 			<?php $image = "Italie" ?>
@@ -69,24 +56,8 @@
 			</div>
 		</div>
 
-		<div id="unVoyage">
-			<?php $image = "Madagascar" ?>
-			<img src="images/<?php echo $image ?>.jpg">
-			<div >
-				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-				<table>
-					<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-					<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-					<tr><td>Numéro de facture :</td> <td> (champ num facture)</td></tr>
-					<tr><td>Prix payé :</td> <td> (champ prix)</td></tr>
-					<tr><td>Dates :</td> <td> (champ dated -> datef)</td></tr>
-					<tr><td>Transport :</td> <td> (champ transport)</td></tr>
-					<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-				</table>
-			</div>
-		</div>
-	</section>
 
+	</section>
 
 	<!-- ZONE FOOTER -->
 	<footer>
