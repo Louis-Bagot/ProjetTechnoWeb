@@ -98,12 +98,12 @@
 		<?php
 				//require_once("SQLite-Creation.php");
 				//require_once("SQLite-Insertion.php");
-				require("SQLite-Selection-F.php");
+				require("SQLite-Selection-PA.php");
 		?>
 
 		<section id="Voyages">
 
-<?php foreach($resultF as $row) : ?>
+<?php foreach($resultPA as $row) : ?>
 
 				<div id="unVoyage">
 					<?php $image = $row['nomv'] ?>
