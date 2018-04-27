@@ -18,7 +18,7 @@
         	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         	/* requete de selection */
-        	$requete = "SELECT nomv, logement, pension, duree, urlto FROM Voyage";
+        	$requete = "SELECT nomv, pays, logement, pension, duree, urlto FROM Voyage";
 
         	$resultPA = $db->query($requete);
         	unset($db);

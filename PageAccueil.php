@@ -84,6 +84,7 @@
 					<div >
 						<div id="NomVoyageClient"> <?php echo $row['nomv'] ?> </div>
 						<table>
+							<tr><td>Pays :</td> <td> <?php echo $row['pays'] ?> </td></tr>
 							<tr><td>Logement :</td> <td> <?php echo $row['logement'] ?> </td></tr>
 							<tr><td>Pension :</td> <td> <?php echo $row['pension'] ?> </td></tr>
 							<tr><td>Durée :</td> <td> <?php echo $row['duree']." nuit(s)" ?> </td></tr>
