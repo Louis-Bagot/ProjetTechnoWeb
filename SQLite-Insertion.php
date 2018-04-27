@@ -27,6 +27,13 @@
           $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Voyage Oriental','Vietnam','Hanoï','Hôtel','Pension Complète',16, 'Tui', 'www.tui.fr');");
           $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Grand Froid','Islande','Reykjavik','Igloo','Pension Complète',8, 'Fram', 'www.fram.fr');");
           $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Madagascar','Madagascar','Antananarivo','Cabane','Pension Complète',7, 'Tui', 'www.tui.fr');");
+          $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Canada Authentique','Canada','Toronto','Igloo','Sans Pension',5, 'ThomasCook', 'www.thomascook.fr');");
+          $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Venise Romantique','Italie','Venise','Location','Sans Pension',5, 'Jet Tour', 'www.jettours.com');");
+          $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Virée Montagnarde','Suisse','Genève','Location','Demi-Pension',12, 'Tui', 'www.tui.fr');");
+          $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Londres City','Angleterre','Londres','Hôtel','Demi-Pension',2, 'Fram', 'www.fram.fr');");
+          $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Farniente','Bora-Bora','Vaitape','Hôtel','Pension Complète',30, 'Tui', 'www.tui.fr');");
+          $db->exec("INSERT INTO Voyage(nomv,pays,villev,logement,pension,duree, nomto, urlto) VALUES ('Découverte Du Désert','Tunisie','Tunis','Hôtel','Sans Pension',10, 'ThomasCook', 'www.thomascook.fr');");
+  
 
           $db->exec("INSERT INTO Client(nomc,prenomc,email) VALUES ('Loiseau','Quentin','quentin.loiseau@wanadoo.fr');");
           $db->exec("INSERT INTO Client(nomc,prenomc,email) VALUES ('Raison','Tristan','raison_tristan@wanadoo.fr');");
@@ -64,14 +71,14 @@
           $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (3,700,'2018-01-01','2018-01-06','train','Vasanthan','Vinduja','Venise Romantique','Delecourt','Simon');");
           $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (4,1200,'2017-07-01','2017-07-06','avion','Vasanthan','Vinduja','Canada Authentique','Lefrançois','Léa');");
           $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (5,1100,'1999-10-02','1999-10-07','avion','Vasanthan','Vinduja','Canada Authentique','Fragnaud','Cédric');");
-          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (6,2450,'2013-04-10','2013-04-22','train','Couret','Laura','Virée montagnarde','Bagot','Louis');");
+          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (6,2450,'2013-04-10','2013-04-22','train','Couret','Laura','Virée Montagnarde','Bagot','Louis');");
           $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (7,640,'2011-09-14','2011-09-16','train','Couret','Laura','Londres City','Rohart','Elodie');");
           $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (8,1000,'2014-03-01','2014-03-31','avion','Couret','Laura','Farniente','Lefrançois','Léa');");
           $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (9,590,'2007-02-13','2007-02-15','train','Dupont','Eva','Londres City','Fragnaud','Cédric');");
-          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (10,710,'2000-12-2','2000-12-12','avion','Larrenie','Pierre','Découverte du désert','Bagot','Louis');");
-          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (11,1950,'2003-10-5','2003-10-20','bateau','Larrenie','Pierre','Ile de beauté','Loiseau','Quentin');");
-          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (12,1430,'2003-10-5','2003-10-13','avion','Larrenie','Pierre','Au coeur des traditions','Raison','Tristan');");
-          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (13,3600,'2018-02-05','2018-02-30','avion','Couret','Laura','Bienvenue au pays des kangourous','Laval','Elsa');");
+          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (10,710,'2000-12-2','2000-12-12','avion','Larrenie','Pierre','Découverte Du Désert','Bagot','Louis');");
+          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (11,1950,'2003-10-5','2003-10-20','bateau','Larrenie','Pierre','Ile De Beauté','Loiseau','Quentin');");
+          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (12,1430,'2003-10-5','2003-10-13','avion','Larrenie','Pierre','Au Coeur Des Traditions','Raison','Tristan');");
+          $db->exec("INSERT INTO Reservation(num, prix, dated, datef, transport, nomco, prenomco, nomv, nomc, prenomc) VALUES (13,3600,'2018-02-05','2018-02-30','avion','Couret','Laura','Bienvenue Au Pays Des Kangourous','Laval','Elsa');");
 
         	/* commit des insertions */
         	$db->commit();

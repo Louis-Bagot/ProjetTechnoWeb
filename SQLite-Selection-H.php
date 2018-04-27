@@ -17,29 +17,21 @@
         	/* errors -> exceptions */
         	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-          echo "Befor Requete";
+          $email = $_SESSION["login"];
+
         	/* requete de selection */
-        	$requete = "SELECT * FROM Voyage, Reservation, Client, Contenir WHERE Contenir.num=Reservation.num AND Voyage.nomv=Reservation.nomv AND Client.nomc=Contenir.nomc AND Client.email=\"quentin.loiseau@wanadoo.fr\" ";
-          //$requete = " SELECT Reservation.num, Contenir.nomc FROM Reservation, Contenir WHERE Reservation.num=Contenir.num";
-          //$requete = "SELECT nomc, prenomc FROM Client WHERE email=\"quentin.loiseau@wanadoo.fr\" ";
+          $requete = "SELECT Reservation.num, Reservation.prix, Reservation.dated, Reservation.datef, Reservation.nomv, Reservation.transport, Voyage.logement, Voyage.pension, Voyage.urlto FROM Client, Contenir, Reservation, Voyage WHERE Client.email=\"$email\" AND Client.nomc=Contenir.nomc AND Contenir.num=Reservation.num AND Voyage.nomv=Reservation.nomv " ;
 
         	$resultH = $db->query($requete);
         	unset($db);
-        	foreach($resultH as $row)
-        	{
-        	  //echo '<p>'.$row['nomv'].' - '.$row['logement'].' - '.$row['pension'].' - '.$row['urlto'].' - '.$row['prix'].' - '.$row['dated'].' - '.$row['datef']..' - '.$row['transport'].'</p>';
-            //echo '<p>'.$row['nomc'].' - '.$row['prenomc'].' - '.$row['email'].'</p>';
-            //echo gettype($row['nomc']);
-            //echo gettype($row['prenomc']);
-            //echo gettype($row['email']);
-            echo "Rien trouvé";
-            echo '<p>'.$row['nomv'].'<p>';
-        	}
+        	//foreach($resultH as $row)
+        	//{
+          //  echo '<p>'.$row['nomc'].' - '.$row['prenomc'].' - '.$row['email'].' - '.$row['num'].' - '.$row['prix'].' - '.$row['nomv'].' - '.$row['logement'].'</p>';
+        	//}
       }
       catch(Exception $e)
       {
-	echo $e->getMessage();
-  echo "exception";
+      	echo $e->getMessage();
       }
     ?>
   </body>

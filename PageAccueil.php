@@ -32,8 +32,7 @@
 
 			<!-- Filtrage -->
 		  <fieldset>
-				<form action="traitementFiltrage.php" method ="POST">
-				<form action="POST">
+				<form action="SQLite-Selection-F.php" method ="POST">
 			    <legend><strong> Filtrer</strong></legend>
 					<br>
 					<table>
@@ -99,12 +98,12 @@
 		<?php
 				//require_once("SQLite-Creation.php");
 				//require_once("SQLite-Insertion.php");
-				require("SQLite-Selection-PA.php");
+				require("SQLite-Selection-F.php");
 		?>
 
 		<section id="Voyages">
 
-<?php foreach($resultPA as $row) : ?>
+<?php foreach($resultF as $row) : ?>
 
 				<div id="unVoyage">
 					<?php $image = $row['nomv'] ?>

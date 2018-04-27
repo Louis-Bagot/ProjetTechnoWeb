@@ -39,23 +39,26 @@
 
 	<section id="Voyages">
 
-		<div id="unVoyage">
-			<?php $image = "Italie" ?>
-			<img src="images/<?php echo $image ?>.png">
-			<div >
-				<div id="NomVoyageClient"> (Champ nom du Voyage)</div>
-				<table>
-					<tr><td>Logement :</td> <td> (champ Logement)</td></tr>
-					<tr><td>Pension :</td> <td> (champ Pension)</td></tr>
-					<tr><td>Numéro de facture :</td> <td> (champ num facture)</td></tr>
-					<tr><td>Prix payé :</td> <td> (champ prix)</td></tr>
-					<tr><td>Dates :</td> <td> (champ dated -> datef)</td></tr>
-					<tr><td>Transport :</td> <td> (champ transport)</td></tr>
-					<tr><td>Tour Opérateur :</td> <td> (champ TO) <a href="https://www.fram.fr">www.fram.fr</a></td></tr>
-				</table>
-			</div>
-		</div>
+<?php foreach($resultH as $row) : ?>
 
+	<div id="unVoyage">
+		<?php $image = $row['nomv'] ?>
+		<img src="images/<?php echo $image ?>.png">
+		<div >
+			<div id="NomVoyageClient"> <?php echo $row['nomv'] ?> </div>
+			<table>
+				<tr><td>Logement :</td> <td> <?php echo $row['logement'] ?></td></tr>
+				<tr><td>Pension :</td> <td> <?php echo $row['pension'] ?> </td></tr>
+				<tr><td>Numéro de facture :</td> <td> <?php echo $row['num'] ?> </td></tr>
+				<tr><td>Prix payé :</td> <td> <?php echo $row['prix'] ?></td></tr>
+				<tr><td>Dates :</td> <td> <?php echo $row['dated'].' -> '.$row['datef'] ?></td></tr>
+				<tr><td>Transport :</td> <td> <?php echo $row['transport'] ?> </td></tr>
+				<tr><td>Tour Opérateur :</td> <td> <a href=<?php echo "https://".$row['urlto'] ?>> <?php echo $row['urlto'] ?> </a></td></tr>
+			</table>
+		</div>
+	</div>
+
+<?php endforeach ?>
 
 	</section>
 
