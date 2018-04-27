@@ -36,35 +36,49 @@
 				<form action="POST">
 			    <legend><strong> Filtrer</strong></legend>
 					<br>
-					Destination : <select name="Destination" >
-						<?php
-								require("SQLite-Selection-PA.php");
-						?>
-						<?php foreach($resultPays as $row) : ?>
-								<option value=<?php echo $row['pays'] ?>> <?php echo $row['pays'] ?> </option>
-						<?php endforeach ?>
-					</select><br/>
-
-					Logement : <select name="Logement">
-						<option value="">(Non précisé)</option>
-						<?php
-								require("SQLite-Selection-PA.php");
-						?>
-						<?php foreach($resultL as $row) : ?>
-								<option value=<?php echo $row['logement'] ?>> <?php echo $row['logement'] ?> </option>
-						<?php endforeach ?>
-					</select><br/>
-
-					Pension :	<select name="Pension" >
-						<option value="">(Non précisé)</option>
-						<?php
-								require("SQLite-Selection-PA.php");
-						?>
-						<?php foreach($requetePension as $row) : ?>
-								<option value=<?php echo $row['pension'] ?>> <?php echo $row['pension'] ?> </option>
-						<?php endforeach ?>
-					</select><br/>
-
+					<table>
+						<tr>
+							<td>Destination : </td>
+							<td>
+								<select name="Destination" >
+								<?php
+										require("SQLite-Selection-PA.php");
+								?>
+								<?php foreach($resultPays as $row) : ?>
+										<option value=<?php echo $row['pays'] ?>> <?php echo $row['pays'] ?> </option>
+								<?php endforeach ?>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Logement : </td>
+							<td>
+								<select name="Logement">
+									<option value="">(Non précisé)</option>
+									<?php
+									require("SQLite-Selection-PA.php");
+									?>
+									<?php foreach($resultL as $row) : ?>
+										<option value=<?php echo $row['logement'] ?>> <?php echo $row['logement'] ?> </option>
+									<?php endforeach ?>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Pension :	</td>
+							<td>
+								<select name="Pension" >
+									<option value="">(Non précisé)</option>
+									<?php
+									require("SQLite-Selection-PA.php");
+									?>
+									<?php foreach($requetePension as $row) : ?>
+										<option value=<?php echo $row['pension'] ?>> <?php echo $row['pension'] ?> </option>
+									<?php endforeach ?>
+								</select>
+							</td>
+						</tr>
+					</table>
 					Durée : Entre <input type="text" name="Duréemin" id="Durée" placeholder="..." /> et <input type="text" name="DuréeMax" id="Durée" placeholder="..." /> nuits
 					<br/>
 					<!-- (Validation ou effaçage) -->
