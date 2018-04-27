@@ -43,7 +43,7 @@
 
 	<div id="unVoyage">
 		<?php $image = $row['nomv'] ?>
-		<img src="images/<?php echo $image ?>.png">
+		<img src="images/<?php echo $image ?>.jpg">
 		<div >
 			<div id="NomVoyageClient"> <?php echo $row['nomv'] ?> </div>
 			<table>
