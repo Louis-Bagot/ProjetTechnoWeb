@@ -32,7 +32,7 @@
 
 			<!-- Filtrage -->
 		  <fieldset>
-				<form action ="traitementFiltrage.php" method ="POST">
+				<form action="traitementFiltrage.php" method ="POST">
 				<form action="POST">
 			    <legend><strong> Filtrer</strong></legend>
 					<br>
@@ -65,7 +65,7 @@
 						<?php endforeach ?>
 					</select><br/>
 
-					Durée : <input type="text" name="Durée" id="Durée" placeholder="Nombre de nuits... (au moins 1)" /><br/> </td>
+					Durée : Entre <input type="text" name="Duréemin" id="Durée" placeholder="..." /> et <input type="text" name="DuréeMax" id="Durée" placeholder="..." /> nuits
 					<br/>
 					<!-- (Validation ou effaçage) -->
 					<br>
