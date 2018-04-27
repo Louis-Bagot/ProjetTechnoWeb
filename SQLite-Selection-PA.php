@@ -19,8 +19,14 @@
 
         	/* requete de selection */
         	$requete = "SELECT nomv, pays, logement, pension, duree, urlto FROM Voyage";
+          $requetePays = "SELECT distinct pays FROM Voyage";
+          $requeteL = "SELECT distinct logement FROM Voyage";
+          $requetePension = "SELECT distinct pension FROM Voyage";
 
         	$resultPA = $db->query($requete);
+        	$resultPays = $db->query($requetePays);
+        	$resultL = $db->query($requeteL);
+        	$requetePension = $db->query($requetePension);
         	unset($db);
         	//foreach($resultPA as $row)
         	//{
