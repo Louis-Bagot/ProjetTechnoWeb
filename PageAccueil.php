@@ -31,6 +31,7 @@
 
 			<!-- Filtrage -->
 		  <fieldset>
+				<form action ="traitementFiltrage.php" method ="POST">
 				<form action="POST">
 			    <legend><strong> Filtrer</strong></legend>
 					<br>
