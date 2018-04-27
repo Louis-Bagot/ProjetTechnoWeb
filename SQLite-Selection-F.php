@@ -9,22 +9,30 @@
     <?php
       error_reporting(E_ALL);
 
-      if(isset ($_POST ["action"]) {
-        $requete = "SELECT * FROM Voyage WHERE pays= \"$_POST [\"Destination\"]\""; }
+      if(isset ($_POST ["action"])) {
 
-        if (!empty ( $_POST["Logement"])) {
-          $requete = $requete." AND logement=\"$_POST[\"Logement\"])\"";
-        }
+      $destination = $_POST ["Destination"];
+      $requete = "SELECT * FROM Voyage WHERE pays= \"$destination\"";
 
-        if (!empty ( $_POST["Pension"])) {
-          $requete = $requete." AND pension=\"$_POST[\"Pension\"])\"";
-        }
+      if (!empty ( $_POST["Logement"])) {
 
-        if (!empty ( $_POST["Duréemin"] & $_POST["DuréeMax"])) {
+        $logement = $_POST["Logement"];
+        $requete = $requete." AND logement=\"$logement\"";
+      }
 
-        $requete = $requete." AND duree=\"$_POST[\"Durée\"])\"";
-        }
+      if (!empty ( $_POST["Pension"])) {
 
+        $pension = $_POST["Pension"];
+        $requete = $requete." AND pension=\"$pension\"";
+      }
+
+      if (!empty ( $_POST["Duréemin"]) & !empty ( $_POST["DuréeMax"])) {
+        $dureemin = $_POST["Duréemin"];
+        $dureemax = $_POST["DuréeMax"];
+      $requete = $requete." AND \"$dureemin\"<=duree AND duree<= $dureemax";
+      }
+
+    }
         $requete = $requete.";";
 
         try {
