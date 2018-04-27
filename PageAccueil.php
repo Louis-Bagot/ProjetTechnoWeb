@@ -40,7 +40,7 @@
 						<?php
 								require("SQLite-Selection-PA.php");
 						?>
-						<?php foreach($resultF as $row) : ?>
+						<?php foreach($resultPays as $row) : ?>
 								<option value=<?php echo $row['pays'] ?>> <?php echo $row['pays'] ?> </option>
 						<?php endforeach ?>
 					</select><br/>
@@ -50,7 +50,7 @@
 						<?php
 								require("SQLite-Selection-PA.php");
 						?>
-						<?php foreach($resultF as $row) : ?>
+						<?php foreach($resultL as $row) : ?>
 								<option value=<?php echo $row['logement'] ?>> <?php echo $row['logement'] ?> </option>
 						<?php endforeach ?>
 					</select><br/>
@@ -60,7 +60,7 @@
 						<?php
 								require("SQLite-Selection-PA.php");
 						?>
-						<?php foreach($resultF as $row) : ?>
+						<?php foreach($requetePension as $row) : ?>
 								<option value=<?php echo $row['pension'] ?>> <?php echo $row['pension'] ?> </option>
 						<?php endforeach ?>
 					</select><br/>
