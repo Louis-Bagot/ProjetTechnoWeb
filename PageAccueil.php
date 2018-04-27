@@ -23,6 +23,7 @@
 	</header>
 	<hr id="headerHR">
 	<br>
+
 	<div id="frames">
 		<!-- SECTION GAUCHE (FILTRAGE) -->
 		<section id="Filtrage">
@@ -35,25 +36,37 @@
 				<form action="POST">
 			    <legend><strong> Filtrer</strong></legend>
 					<br>
-					Destination :	<br> <select name="Destination" multiple >
-								<option value="Espagne"> Espagne </option>
-								<option value="Argentine"> Argentine </option>
-								<option value="Canada"> Canada </option>
-								<option value="..."> ...
-							</select><br/>
-					Logement : <select name="Logement" >
-								<option value="Hôtel"> Hôtel </option>
-								<option value="Camping"> Camping </option>
-								<option value="Appartement"> Appartement </option>
-								<option value="Igloo"> Igloo
-							</select><br/>
+					Destination : <select name="Destination" >
+						<?php
+								require("SQLite-Selection-PA.php");
+						?>
+						<?php foreach($resultPA as $row) : ?>
+								<option value=<?php echo $row['pays'] ?>> <?php echo $row['pays'] ?> </option>
+						<?php endforeach ?>
+					</select><br/>
+
+					Logement : <select name="Logement">
+						<option value="">(Non précisé)</option>
+						<?php
+								require("SQLite-Selection-PA.php");
+						?>
+						<?php foreach($resultPA as $row) : ?>
+								<option value=<?php echo $row['logement'] ?>> <?php echo $row['logement'] ?> </option>
+						<?php endforeach ?>
+					</select><br/>
+
 					Pension :	<select name="Pension" >
-								<option value="Pension Complète"> Pension Complète </option>
-								<option value="Demi-Pension"> Demi-Pension </option>
-								<option value="Petit Déjeuner"> Petit Déjeuner </option>
-								<option value="(Aucun)"> Aucun
-							</select><br/>
+						<option value="">(Non précisé)</option>
+						<?php
+								require("SQLite-Selection-PA.php");
+						?>
+						<?php foreach($resultPA as $row) : ?>
+								<option value=<?php echo $row['pension'] ?>> <?php echo $row['pension'] ?> </option>
+						<?php endforeach ?>
+					</select><br/>
+
 					Durée : <input type="text" name="Durée" id="Durée" placeholder="Nombre de nuits... (au moins 1)" /><br/> </td>
+					<br/>
 					<!-- (Validation ou effaçage) -->
 					<br>
 					<div >
