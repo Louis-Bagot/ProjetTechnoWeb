@@ -108,6 +108,10 @@ h1 {
   border: none;
 }
 
+#Durée {
+  width: 15%;
+}
+
 fieldset div {
   text-align: center;
 }
