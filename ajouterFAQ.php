@@ -1,3 +1,4 @@
+
 <?php
 		$fichier=fopen("faq.txt",'a');
 		if(isset ($_POST ["action"]) && !empty ( $_POST ["monPseudo"]) && !empty ( $_POST ["texte"])) {

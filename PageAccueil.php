@@ -95,11 +95,7 @@
 
 		<!-- SECTION VOYAGES -->
 
-		<?php
-				//require_once("SQLite-Creation.php");
-				//require_once("SQLite-Insertion.php");
-				require("SQLite-Selection-PA.php");
-		?>
+		<?php	require("SQLite-Selection-PA.php"); ?>
 
 		<section id="Voyages">
 

@@ -90,9 +90,6 @@
 
     <?php endforeach ?>
 
-    
-
-
   </section>
 
   <footer>

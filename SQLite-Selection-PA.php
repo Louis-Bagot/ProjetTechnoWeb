@@ -28,10 +28,7 @@
         	$resultL = $db->query($requeteL);
         	$requetePension = $db->query($requetePension);
         	unset($db);
-        	//foreach($resultPA as $row)
-        	//{
-        	//  echo '<p>'.$row['nomv'].' - '.$row['logement'].' - '.$row['pension'].' - '.$row['duree'].' - '.$row['urlto'].'</p>';
-        	//}
+
       }
       catch(Exception $e)
       {

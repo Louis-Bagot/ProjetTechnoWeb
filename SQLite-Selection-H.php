@@ -24,10 +24,7 @@
 
         	$resultH = $db->query($requete);
         	unset($db);
-        	//foreach($resultH as $row)
-        	//{
-          //  echo '<p>'.$row['nomc'].' - '.$row['prenomc'].' - '.$row['email'].' - '.$row['num'].' - '.$row['prix'].' - '.$row['nomv'].' - '.$row['logement'].'</p>';
-        	//}
+          
       }
       catch(Exception $e)
       {

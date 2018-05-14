@@ -1,3 +1,4 @@
+
 <?php
   $fichier=fopen("mentionslegales.txt",'r');
   while (!feof($fichier)) {

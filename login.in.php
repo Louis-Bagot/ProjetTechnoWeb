@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if ( isset($_POST["submit"]) ) {
@@ -11,9 +12,7 @@ if ( isset($_POST["submit"]) ) {
       if($_POST["login"]==rtrim($ligne)){
         $trouve=true;
         $loginAutorise = rtrim($ligne);
-        //echo $loginAutorise;
         $passwordAutorise = rtrim(fgets($fichier));
-        //echo $passwordAutorise;
       }
     }
 
@@ -34,12 +33,5 @@ if ( isset($_POST["submit"]) ) {
   }
 
 }
-  elseif(!isset($_SESSION["login"])) {
-    //$message3 = 'Vous êtes anonyme \nCliquer sur \'Ok\' pour vous authentifier';
-    //header("Location: ./SignIN.php?Message=". urlencode($message3));
-    //echo "Anonyme";
-    //$login = "Anonyme";
-  }
-
 
 ?>
